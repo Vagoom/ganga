@@ -1,0 +1,29 @@
+#navbar {
+    list-style-type: none;
+    font-family: Verdanab;
+}
+#content_name {
+    font-family: Verdanab;
+    font-weight: bold;
+    text-align: center;
+    color: #ffc34d;
+}
+#navbar li {
+    float: left;
+}
+#navbar li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    color: #ffc34d;
+    text-decoration: none;
+}
+@font-face {
+    font-family: Verdanab;
+    src: url("Fonts/MinionPro-Regular.otf") format("opentype");
+}
+input, textarea {
+    font-family: Verdanab;
+    width: 100%;
+    border: 2.5px solid grey;
+}
