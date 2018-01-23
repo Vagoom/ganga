@@ -27,3 +27,12 @@ input, textarea {
     width: 100%;
     border: 2.5px solid grey;
 }
+input[name="lastname"] {
+    margin-top: 15px;
+}
+input[name="email"] {
+    margin-top: 15px;
+}
+#contact_form input[type="submit"] {
+    margin-top: 15px;
+}

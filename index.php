@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <h2>Logo</h2>
+                <img src="img/logo.svg" width="150px">
             </div>
             <div class="col-md-10">
                 <ul id="navbar">
@@ -31,9 +31,9 @@
         </div>
         <div class="row">
             <div class="col-md-2">
-                <p>Foto</p>
+                <img src="img/author.png" width="150px">
                 <br>
-                <p>Seko mums</p>
+                <p>SEKO</p>
             </div>
             <div class="col-md-10">
                 <p style="text-align:justify">
@@ -64,7 +64,7 @@
                     <input type="text" name="email" placeholder="Epasts:">
                 </div>
                 <div class="col-md-6">
-                    <textarea placeholder="Teksts:"></textarea>
+                    <textarea placeholder="Teksts:" rows="4"></textarea>
                 </div>
                 <div class="col-md-12">
                     <input type="submit" value="SŪTĪT">
