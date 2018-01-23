@@ -74,7 +74,7 @@ input[name="email"] {
 .consult_div {
     height: 265px;
 }
-.buy_consult_button {
+.buy_button {
     background-color:white;
     font-size: 15px;
     color: grey;

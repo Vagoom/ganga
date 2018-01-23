@@ -16,7 +16,7 @@
             как гармонизовать трудные стороны жизни и жизненные периоды
             </p>
             <h3 class="price left_bottom">60 евро</h3>
-            <input class="right_bottom buy_consult_button" type="button" value="PIRKT">
+            <input class="right_bottom buy_button" type="button" value="PIRKT">
         </div>
     </div>
 
@@ -34,7 +34,7 @@
             лучшее время для той или иной деятельности. Анализ всего на основе планетных периодов и транзитов планет.
             </p>
             <h3 class="price left_bottom">50 евро</h3>
-            <input class="right_bottom buy_consult_button" type="button" value="PIRKT">
+            <input class="right_bottom buy_button" type="button" value="PIRKT">
         </div>
     </div>
 
@@ -52,7 +52,7 @@
             Дело начатое в благоприятное время, уже на половину успешно завершенное дело.
             </p>
             <h3 class="price left_bottom">30 евро</h3>
-            <input class="right_bottom buy_consult_button" type="button" value="PIRKT">
+            <input class="right_bottom buy_button" type="button" value="PIRKT">
         </div>
     </div>
 
