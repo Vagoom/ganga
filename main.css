@@ -8,7 +8,7 @@
     text-align: center;
     color: #ffc34d;
 }
-.consult_name, .price, .training_name {
+.consult_name, .price, .training_name, .publication_name {
     font-family: MinionPro-Regular;
     font-weight: bold;
     color: #ffc34d;
@@ -71,17 +71,21 @@ input[name="email"] {
     bottom: 0;
     right: 0;
 }
-.consult_div {
+.consult_div, .publication_div {
     height: 265px;
 }
-.buy_button {
+.buy_button, .read_button {
     background-color:white;
     font-size: 15px;
     color: grey;
     font-family: MinionPro-Regular  ;
 }
-.center_consult_img {
+.center_consult_img, .center_publication_img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.small_line_spacing {
+    font-size:11.5px;
+    line-height:8px;
 }

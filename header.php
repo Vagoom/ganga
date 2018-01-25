@@ -20,11 +20,11 @@
             </div>
             <div class="col-md-10">
                 <ul id="navbar">
-                    <li><a href="/ganga">KONTAKTI</a></li>
+                    <li><a href="index.php">KONTAKTI</a></li>
                     <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
                     <li><a href="training.php">APMĀCĪBAS</a></li>
-                    <li><a href="#">PUBLIKĀCIJAS</a></li>
-                    <li><a href="#">PAR AUTORU</a></li>
+                    <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
+                    <li><a href="about.php">PAR AUTORU</a></li>
                     <li><a href="#">YOUTUBE</a></li>
                 </ul>
                 <br>
