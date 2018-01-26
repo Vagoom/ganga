@@ -23,15 +23,23 @@
     color: #ffc34d;
     text-decoration: none;
 }
+
 footer ul{
     list-style-type: none;
     font-family: MinionPro-Regular;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 footer ul li {
-    float: left;
     padding: 16px;
+    display: inline-block;
 }
-
+footer ul li a img {
+    width: 40%;
+    height: auto;
+}
 @font-face {
     font-family: MinionPro-Regular;
     src: url("Fonts/MinionPro-Regular.otf") format("opentype");
@@ -88,4 +96,26 @@ input[name="email"] {
 .small_line_spacing {
     font-size:11.5px;
     line-height:8px;
+}
+#subscribe_bar {
+    list-style-type: none;
+    float: left;
+    padding: 0;
+}
+
+#subscribe_bar > li {
+    float: left;
+}
+#subscribe_bar > li > a > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.custom_hr {
+    width:1170px;
+    height:auto;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

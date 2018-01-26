@@ -1,9 +1,21 @@
         <footer>
             <ul>
-                <li>Email: gangesvara@mail.ru<a href="#"></a></li>
-                <li>Skype: gangesvara das<a href="#"></a></li>
-                <li>Viber: +919997238113<a href="#"></a></li>
-                <li>WhatsApp: +37258102944<a href="#"></a></li>
+                <li>
+                    <a href="#"><img src="img/email.png"></a>
+                    <p>Email: gangesvara@mail.ru</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/skype.png"></a>
+                    <p>Skype: gangesvara das</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/phone.png"></a>
+                    <p>Viber: +919997238113</p>
+                </li>
+                <li>
+                    <a href="#"><img src="img/whatsapp.png"></a>
+                    <p>WhatsApp: +37258102944</p>
+                </li>
             </ul>
         </footer>
 
