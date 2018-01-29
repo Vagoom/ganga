@@ -42,7 +42,7 @@ footer ul li a img {
 }
 @font-face {
     font-family: MinionPro-Regular;
-    src: url("Fonts/MinionPro-Regular.otf") format("opentype");
+    src: url("fonts/MinionPro-Regular.otf") format("opentype");
 }
 #contact_form input, textarea {
     font-family: MinionPro-Regular;

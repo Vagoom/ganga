@@ -1,8 +1,18 @@
-<?php include('./header.php');?>
+<!DOCTYPE html>
+<html>
+<?php include('head.php');  ?>
 
+<body style="background-image:url('img/background.png')">
+    <div class="container">
+        <?php include('header.php');  ?>
+    </div>
 
-
-        <!-- Here is closing <div class=container> -->
-        </div>
-    </body>
+    <!-- Jquery CDN -->
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
 </html>
