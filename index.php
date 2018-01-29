@@ -2,7 +2,7 @@
 <html>
 <?php include('head.php');  ?>
 
-<body style="background-image:url('img/background.png')">
+<body>
     <div class="container">
         <?php include('header.php');  ?>
     </div>

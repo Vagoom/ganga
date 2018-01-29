@@ -1,6 +1,11 @@
-window.onload = function changeBodyImg() {
-    if (location.pathname !== '/' && location.pathname !== '/ganga/') {
-        document.body.removeAttribute('style');
+//Set background image to body
+function indexBackground() {
+    if (location.pathname === '/' || location.pathname === '/ganga/') {
+        $('body').attr('id', 'body_with_background');
     }
 }
-changeBodyImg();
+
+//Change background on index page
+$(document).ready(function() {
+    indexBackground();
+});

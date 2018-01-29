@@ -4,6 +4,8 @@
 
 <body>
     <div class="container">
+        <?php include('header.php');  ?>
+
         <div class="row">
             <h2 class="content_name">PAR AUTORU</h2>
         </div>

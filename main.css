@@ -1,15 +1,25 @@
+@font-face {
+    font-family: MinionPro-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/MinionPro-Regular.otf") format("woff2");
+}
+body {
+    font-family: MinionPro-Regular;
+    margin:3em;
+}
+#body_with_background {
+    background-image:url('img/background.png');
+}
 #navbar {
     list-style-type: none;
-    font-family: MinionPro-Regular;
 }
 .content_name {
-    font-family: MinionPro-Regular;
     font-weight: bold;
     text-align: center;
     color: #ffc34d;
 }
 .consult_name, .price, .training_name, .publication_name {
-    font-family: MinionPro-Regular;
     font-weight: bold;
     color: #ffc34d;
 }
@@ -26,7 +36,6 @@
 
 footer ul{
     list-style-type: none;
-    font-family: MinionPro-Regular;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -40,12 +49,7 @@ footer ul li a img {
     width: 40%;
     height: auto;
 }
-@font-face {
-    font-family: MinionPro-Regular;
-    src: url("fonts/MinionPro-Regular.otf") format("opentype");
-}
 #contact_form input, textarea {
-    font-family: MinionPro-Regular;
     width: 100%;
     border: 2px solid grey;
 }
@@ -61,10 +65,10 @@ input[name="email"] {
     font-size: 25px;
     font-weight: bold;
     color: grey;
-    font-family: MinionPro-Regular  ;
 }
 #search_container input {
     border: 1px solid grey;
+    background: transparent;
 }
 #search_container {
     float: right;
@@ -86,7 +90,6 @@ input[name="email"] {
     background-color:white;
     font-size: 15px;
     color: grey;
-    font-family: MinionPro-Regular  ;
 }
 .center_consult_img, .center_publication_img {
     display: block;
