@@ -8,4 +8,8 @@ function indexBackground() {
 //Change background on index page
 $(document).ready(function() {
     indexBackground();
+    
+    $('#search_button').click(function(){
+        alert('yoyooyoy');
+    });
 });
