@@ -1,32 +1,39 @@
 
-<div class="row">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img src="img/logo.svg" width="150px" height="auto">
-                </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <div id="search_container" class="hidden-xs">
-                    <input type="search" name="search">
-                    <input id="search_button" type="image" src="img/search-icon.png">
+<header>
+    <div class="row">
+        <div class="col-md-2 col-xs-8">
+            <a href="/">
+                <img src="img/logo.svg" width="150px" height="auto">
+            </a>
+        </div>
+        <div class="col-md-10 col-xs-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="search_container" class="hidden-xs hidden-sm">
+                        <form action="post">
+                            <input type="search" name="search">
+                            <input id="search_button" type="image" src="img/search-icon.png">
+                        </form>
+                    </div>
+                    <div id="nav_toggler" class="hidden-lg hidden-md">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                    </div>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="contact.php">KONTAKTI</a></li>
-                    <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
-                    <li><a href="training.php">APMĀCĪBAS</a></li>
-                    <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
-                    <li><a href="about.php">PAR AUTORU</a></li>
-                    <li><a href="https://youtube.com">YOUTUBE</a></li>
-                </ul>
+            </div>
+            <div class="row hidden-sm hidden-xs">
+                <div class="col-md-12">
+                    <ul id="navbar">
+                        <li><a href="contact.php">KONTAKTI</a></li>
+                        <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
+                        <li><a href="training.php">APMĀCĪBAS</a></li>
+                        <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
+                        <li><a href="about.php">PAR AUTORU</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-</div>
+    </div>
+</header>
