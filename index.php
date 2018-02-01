@@ -6,7 +6,7 @@
     <div class="container">
         
         <?php include('header.php');  ?>
-        <img src="img/ganga_logo.png" class="img-responsive" style="margin:auto; margin-top:160px;">
+        <img src="img/ganga_logo.png" class="img-responsive" style="margin:auto; margin-top:110px; width:30%">
     </div>
 
 

@@ -13,18 +13,18 @@
                     <img src="img/logo.svg" width="150px" height="auto">
                 </a>
             </div>
-            <div id="search_container" class="hidden-xs">
-                <input type="search" name="search">
-                <input id="search_button" type="image" src="img/search-icon.png">
-            </div>
             <div id="navbar" class="navbar-collapse collapse">
+                <div id="search_container" class="hidden-xs">
+                    <input type="search" name="search">
+                    <input id="search_button" type="image" src="img/search-icon.png">
+                </div>
                 <ul class="nav navbar-nav">
                     <li><a href="contact.php">KONTAKTI</a></li>
                     <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
                     <li><a href="training.php">APMĀCĪBAS</a></li>
                     <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
                     <li><a href="about.php">PAR AUTORU</a></li>
-                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="https://youtube.com">YOUTUBE</a></li>
                 </ul>
             </div>
         </div>

@@ -61,13 +61,17 @@ input[name="email"] {
     background: transparent;
 }
 #search_container {
-    float: right;
     position: relative;
+    float: right;
+    margin-right: 60px;
 }
 #search_button {
     position: absolute;
-    left: 144px;
-    top: 5px;
+    bottom: 5px;
+    right: 10px;
+}
+#navbar {
+    margin-top: 14px;
 }
 .left_bottom {
     position: absolute;
@@ -118,8 +122,14 @@ input[name="email"] {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#navbar ul {
-    margin-top: 15px;
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    }
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 /* On focus attribues */
