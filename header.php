@@ -22,18 +22,38 @@
                     </div>
                 </div>
             </div>
-            <div class="row hidden-sm hidden-xs">
-                <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 hidden-sm hidden-xs">
                     <ul id="navbar">
                         <li><a href="contact.php">KONTAKTI</a></li>
                         <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
                         <li><a href="training.php">APMĀCĪBAS</a></li>
                         <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
                         <li><a href="about.php">PAR AUTORU</a></li>
-                        <li><a href="#">YOUTUBE</a></li>
+                        <li><a href="https://youtube.com">YOUTUBE</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row" id="mobile_navbar_container" style="display:none;">
+        <div class="col-xs-12">
+            <ul id="navbar_mobile">
+                <li><a href="contact.php">KONTAKTI</a></li>
+                <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
+                <li><a href="training.php">APMĀCĪBAS</a></li>
+                <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
+                <li><a href="about.php">PAR AUTORU</a></li>
+                <li><a href="https://youtube.com">YOUTUBE</a></li>
+                <li>
+                    <div id="mobile_search_container">
+                        <form action="post">
+                            <input type="search" name="search">
+                            <input id="mobile_search_button" type="image" src="img/search-icon.png">
+                        </form>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </header>

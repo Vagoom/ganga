@@ -4,9 +4,8 @@
 
 <body>
     <div class="container">
-        
         <?php include('header.php');  ?>
-        <img src="img/ganga_logo.png" class="img-responsive" style="margin:auto; margin-top:110px; width:30%">
+        <img id="center_logo" class="img-responsive" src="img/ganga_logo.png">
     </div>
 
     <!-- Jquery CDN -->
