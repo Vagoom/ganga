@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<?php include('head.php');  ?>
+<?php include('head.php');?>
 
 <body>
     <div class="container">
-        <?php include('header.php');  ?>
+        <?php include('header.php');?>
         <img id="center_logo" class="img-responsive" src="img/ganga_logo.png">
     </div>
 

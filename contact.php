@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<?php include('head.php');  ?>
+<?php include('head.php');?>
 
 <body>
     <div class="container">
-        <?php include('header.php');  ?>
+        <?php include('header.php');?>
 
         <div class="row">
             <h2 class="content_name">KONTAKTI</h2>
         </div>
+
         <div class="row">
             <div class="col-md-2">
                 <img src="img/author.png" width="150px">
@@ -39,8 +40,9 @@
                 inverundae nim qui repe perferum cus, oditatem que volupta temporest, eosantemquia corat reptaes eaturio
                 </p>
             </div>
-            <img class="custom_hr" src="img/hr-full.png">
+            <img class="custom_hr img-responsive" src="img/hr-full.png">
         </div>
+
         <div class="row">
             <form id="contact_form" action="post">
                 <div class="col-md-6">
@@ -57,7 +59,7 @@
             </form>
         </div>
 
-        <?php include('footer.php'); ?>
+        <?php include('footer.php');?>
     </div>
 
     <!-- Jquery CDN -->

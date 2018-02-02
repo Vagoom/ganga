@@ -112,19 +112,28 @@ input[name="email"] {
     outline: unset;
     color: #f5b01c;
 }
+/* Dekstop search container */
 #search_container {
-    position: relative;
     float: right;
-    margin-right: 15px;
+}
+#search_container form {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+#search_container form input[type="search"]{
+    border: 1px solid #808285;
+    display: block;
+    height: 20px;
+    margin-right: 14px;
 }
 #search_button {
     position: absolute;
-    bottom: 5px;
-    right: 10px;
+    bottom: 3px;
+    right: 18px;
 }
 /* Mobile search container */
 #mobile_search_container {
-    position: relative;
     text-align: center;
 }
 #mobile_search_container form {
@@ -143,6 +152,7 @@ input[name="email"] {
     bottom: 7px;
     right: 12px;
 }
+/* Common classes */
 .left_bottom {
     position: absolute;
     bottom: 0;
@@ -170,6 +180,7 @@ input[name="email"] {
     font-size:11.5px;
     line-height:8px;
 }
+/* Subscribe bar */
 #subscribe_bar {
     list-style-type: none;
     float: left;
@@ -184,6 +195,7 @@ input[name="email"] {
     height: 40px;
     margin-right: 15px;
 }
+/* Custom hr */
 .custom_hr {
     width:1170px;
     height:auto;
@@ -192,18 +204,28 @@ input[name="email"] {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+/* Nav toggler components */
 #nav_toggler {
     position: fixed;
     background:transparent;
     padding: 16px 15px;
     width: 70px;
     float: right;
-    top: 0;
     right: 0;
 }
 .line {
     width: 100%;
     background: #f5b01c;
+    height: 4px;
+    margin: 11px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.line_grey {
+    width: 100%;
+    background: #808285;
     height: 4px;
     margin: 11px 0;
     -webkit-transition: all 0.3s;

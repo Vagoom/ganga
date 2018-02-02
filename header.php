@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-2 col-xs-8">
             <a href="/">
-                <img src="img/logo.svg" width="150px" height="auto">
+                <img src="img/logo.svg" class="img-responsive" width="200px" height="auto">
             </a>
         </div>
         <div class="col-md-10 col-xs-4">
@@ -36,6 +36,8 @@
             </div>
         </div>
     </div>
+    
+    <!-- Toggles on mobile view -->
     <div class="row" id="mobile_navbar_container" style="display:none;">
         <div class="col-xs-12">
             <ul id="navbar_mobile">
