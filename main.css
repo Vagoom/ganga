@@ -125,6 +125,12 @@ input[name="email"] {
 /* Mobile search container */
 #mobile_search_container {
     position: relative;
+    text-align: center;
+}
+#mobile_search_container form {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
 }
 #mobile_search_container form input[type="search"]{
     border: 3px solid #808285;
@@ -135,7 +141,7 @@ input[name="email"] {
 #mobile_search_button {
     position: absolute;
     bottom: 7px;
-    right: 106px;
+    right: 12px;
 }
 .left_bottom {
     position: absolute;
