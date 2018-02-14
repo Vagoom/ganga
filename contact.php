@@ -12,13 +12,13 @@
 
         <div class="row">
             <div class="col-md-2">
-                <img src="img/author.png" width="150px">
+                <img src="assets/img/author.png" width="150px">
                 <br>
                 <p style="color:grey">SEKO</p>
                 <ul id="subscribe_bar">
-                    <li><a href="#"><img src="img/fb.png"></a></li>
-                    <li><a href="#"><img src="img/tw.png"></a></li>
-                    <li><a href="#"><img src="img/yt.png"></a></li>
+                    <li><a href="#"><img src="assets/img/fb.png"></a></li>
+                    <li><a href="#"><img src="assets/img/tw.png"></a></li>
+                    <li><a href="#"><img src="assets/img/yt.png"></a></li>
                 </ul>
             </div>
             <div class="col-md-10">
@@ -40,7 +40,7 @@
                 inverundae nim qui repe perferum cus, oditatem que volupta temporest, eosantemquia corat reptaes eaturio
                 </p>
             </div>
-            <img class="custom_hr img-responsive" src="img/hr-full.png">
+            <img class="custom_hr img-responsive" src="assets/img/hr-full.png">
         </div>
 
         <div class="row">

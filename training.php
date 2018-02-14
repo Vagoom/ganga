@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img src="img/corporate.jpg" width="450px" style="float:left; margin-right:10px;">
+                <img src="assets/img/corporate.jpg" width="450px" style="float:left; margin-right:10px;">
                 <h4 class="training_name" style="margin-top:0;">ИНДИВИДУАЛЬНОЕ ОБУЧЕНИЕ</h4>
                 <p>
                 Eptiur? Ignam volupti onectata eatisit iundam harupta aboremporae nihil ilitiscia dest, 

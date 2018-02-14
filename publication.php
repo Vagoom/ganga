@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/stihija.jpg" width="400px" class="center_publication_img">
+                <img src="assets/img/stihija.jpg" width="400px" class="center_publication_img">
             </div>
             <div class="col-md-7 publication_div">
                 <h4 class="publication_name" style="margin-top:0;">ASTRODIĒTA ZEMES STIHIJAS ZĪMĒM</h4>
@@ -29,7 +29,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/women.jpg" width="400px" class="center_publication_img">
+                <img src="assets/img/women.jpg" width="400px" class="center_publication_img">
             </div>
             <div class="col-md-7 publication_div">
                 <h4 class="publication_name" style="margin-top:0;">ĒŠANAS, DZERŠANAS UN DIĒTAS KALENDĀRS</h4>
@@ -46,7 +46,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/veseliba.jpg" width="400px" height="300px" class="center_publication_img">
+                <img src="assets/img/veseliba.jpg" width="400px" height="300px" class="center_publication_img">
             </div>
             <div class="col-md-7 publication_div">
                 <h4 class="publication_name" style="margin-top:0;">VESELĪBAS ASTROLOĢIJAS IEVADS</h4>
@@ -63,7 +63,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/zodiak.jpg" width="400px" class="center_publication_img">
+                <img src="assets/img/zodiak.jpg" width="400px" class="center_publication_img">
             </div>
             <div class="col-md-7 publication_div">
                 <h4 class="publication_name" style="margin-top:0;">ZODIAKA ZĪMES UN ORGANISMA VĀJĀS VIETAS</h4>

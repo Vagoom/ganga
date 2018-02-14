@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-2 col-xs-8">
             <a href="/">
-                <img src="img/logo.svg" class="img-responsive" width="200px" height="auto">
+                <img src="assets/img/logo.svg" class="img-responsive" width="200px" height="auto">
             </a>
         </div>
         <div class="col-md-10 col-xs-4">
@@ -12,7 +12,7 @@
                     <div id="search_container" class="hidden-xs hidden-sm">
                         <form action="post">
                             <input type="search" name="search">
-                            <input id="search_button" type="image" src="img/search-icon.png">
+                            <input id="search_button" type="image" src="assets/img/search-icon.png">
                         </form>
                     </div>
                     <div id="nav_toggler" class="hidden-lg hidden-md">
@@ -51,7 +51,7 @@
                     <div id="mobile_search_container">
                         <form action="post">
                             <input type="search" name="search">
-                            <input id="mobile_search_button" type="image" src="img/search-icon.png">
+                            <input id="mobile_search_button" type="image" src="assets/img/search-icon.png">
                         </form>
                     </div>
                 </li>

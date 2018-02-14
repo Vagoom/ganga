@@ -8,7 +8,7 @@ body {
     margin-left: 1em;
 }
 #body_with_background {
-    background: url('../../img/background.png') no-repeat center center fixed; 
+    background: url('../img/background.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

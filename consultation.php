@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/gimene.jpg" width="400px" class="center_consult_img">
+                <img src="assets/img/gimene.jpg" width="400px" class="center_consult_img">
             </div>
             <div class="col-md-7 consult_div">
                 <h4 class="consult_name">ВАША ЛИЧНОСТЬ</h4>
@@ -30,7 +30,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/baraban.jpg" width="300px" class="center_consult_img">
+                <img src="assets/img/baraban.jpg" width="300px" class="center_consult_img">
             </div>
             <div class="col-md-7 consult_div">
                 <h4 class="consult_name">Я - ЭТО АСТРОЛОГИЧЕСКИЙ ПРОГНОЗ НА ГОД.</h4>
@@ -48,7 +48,7 @@
 
         <div class="row">
             <div class="col-md-5">
-                <img src="img/baraban.jpg" width="300px" class="center_consult_img">
+                <img src="assets/img/baraban.jpg" width="300px" class="center_consult_img">
             </div>
             <div class="col-md-7 consult_div">
                 <h4 class="consult_name">Я - ЭТО ВЫБОР БЛАГОПРИЯТНОГО ВРЕМЕНИ</h4>
