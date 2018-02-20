@@ -1,0 +1,7 @@
+/wire/
+site/modules
+site/assets/cache
+site/assets/logs
+site/assets/sessions
+site/config.php
+.htaccess
