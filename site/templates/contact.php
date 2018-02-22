@@ -27,6 +27,7 @@
             </div>
         </div>
         <img class="custom_hr" src="<?=$pages->get('/')->customhr->url?>">
+
         <?php include('./inc/contact-form.php');?>
         <?php include('./inc/footer.php');?>
     </div>
@@ -37,6 +38,6 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
-    <script src="assets/js/main.js"></script>
+    <script src="<?=$config->urls->templates?>js/main.js"></script>
 </body>
 </html>

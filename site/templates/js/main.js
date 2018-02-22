@@ -65,4 +65,19 @@ $(document).ready(function() {
             mobileNavContainer.css('display', 'block');
         }
     });
+
+    //Ajax #send_form action
+
+    $('#send-form-btn').click(function(e) {
+        // e.preventDefault();
+        var form = $('#contact_form');
+        // $.ajax({
+        //     url: '/form/',
+        //     type: 'POST',
+        //     data : {},
+        //
+        // });
+        $.post(form.attr('action'), form.serialize());
+    });
+
 });
