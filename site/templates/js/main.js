@@ -71,13 +71,39 @@ $(document).ready(function() {
     $('#send-form-btn').click(function(e) {
         // e.preventDefault();
         var form = $('#contact_form');
+
+        var borderColor = 'rgb(193, 28, 3)';
         // $.ajax({
         //     url: '/form/',
         //     type: 'POST',
         //     data : {},
         //
         // });
-        $.post(form.attr('action'), form.serialize());
+        $.post(form.attr('action'), form.serialize(), function(response) {
+            response = JSON.parse(response);
+            if (response.status === 2) {
+
+                form.find('input:not(.send-form-btn)').each(function(key, value) {
+                    var currentInputName = value['name'];
+                    var textArea = form.find('textarea');
+
+                    $.each(response.fieldErrors, function(key) {
+                        var fieldError = response.fieldErrors[key];
+
+                        if (currentInputName === fieldError.field) {
+                            form.find('input[name=\'' + currentInputName + '\']')
+                                .css('border-color', '#C11C03')
+                                .after('<p>' + fieldError.errorMessage + '</p>');
+                        }
+                        else if (textArea.attr('name') === fieldError.field) {
+                            textArea.css('border-color', '#C11C03');
+                        }
+
+                    });
+
+                });
+            }
+        });
     });
 
 });

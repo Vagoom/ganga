@@ -54,16 +54,16 @@ if ($config->ajax) {
     if ($response['status'] === STATUS_SUCCESS) {
 
         /** Create database record as new Processwire page */
-        $page = new Page();
-        $page->template = 'form-handler';
-        $page->of(false);
-        $page->parent = $pages->get('/form/');
-        $page->title  = date('d-m-Y G:i',time()) . ' from: ' . $formFields['email'];
-        $page->firstname = $formFields['firstname'];
-        $page->lastname = $formFields['lastname'];
-        $page->senderemail =  $formFields['email'];
-        $page->message = $formFields['message'];
-        $page->save();
+//        $page = new Page();
+//        $page->template = 'form-handler';
+//        $page->of(false);
+//        $page->parent = $pages->get('/form/');
+//        $page->title  = date('d-m-Y G:i',time()) . ' from: ' . $formFields['email'];
+//        $page->firstname = $formFields['firstname'];
+//        $page->lastname = $formFields['lastname'];
+//        $page->senderemail =  $formFields['email'];
+//        $page->message = $formFields['message'];
+//        $page->save();
 
         /** Send mail to website owner */
 //        $mail = $mail->new();
