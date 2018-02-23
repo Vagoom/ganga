@@ -44,7 +44,7 @@ if ($config->ajax) {
                 case 'message':
                     $response['fieldErrors'][] = [
                         'field' => $fieldName,
-                        'errorMessage' => __('Lūdzu ievadiet ziņu.')
+                        'errorMessage' => __('Lūdzu ievadiet ziņojumu.')
                     ];
                     break;
             }

@@ -11,5 +11,5 @@
             <textarea name="message" placeholder="Teksts:"></textarea>
         </div>
     </div>
-    <input id="send-form-btn" type="button" value="SŪTĪT" style="height: 50px">
+    <input id="send-form-btn" type="button" name="send" value="SŪTĪT" style="height: 50px">
 </form>

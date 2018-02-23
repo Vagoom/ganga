@@ -39,5 +39,6 @@
         crossorigin="anonymous">
     </script>
     <script src="<?=$config->urls->templates?>js/main.js"></script>
+    <script src="<?=$config->urls->templates?>js/libs/jquery.validate.min.js"></script>
 </body>
 </html>

@@ -151,6 +151,11 @@ footer ul li a img {
     color: white;
     font-weight: bold;
 }
+.error-text {
+    font-family: initial;
+    color: #C11C03;
+    margin: 0;
+}
 /* Dekstop search container */
 #search_container {
     position: absolute;
