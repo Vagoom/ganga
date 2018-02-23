@@ -1,7 +1,7 @@
 
 const CONTACT_PAGE_URL = '/gangasvara/contact/';
 const HOME_PAGE_URL = '/gangasvara/';
-
+const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
 
 
 //Set background image to body
@@ -29,7 +29,9 @@ $(document).ready(function() {
         form.css('display', 'block');
     }
 
-    //Toggle contact form
+    /**
+     * Toggle contact form on consultation page
+     */
     $('.buy_button').click(function() {
 
         var closestConsultWrapper = $(this).closest('.consult-wrapper');
@@ -37,7 +39,10 @@ $(document).ready(function() {
         if (!closestConsultWrapper.next().is('.form-container')) {
             $('.container > .form-container').remove();
             $('<div class="form-container"></div>').insertAfter(closestConsultWrapper);
-            $('.form-container').html(form.css('display', 'block').clone());
+            var formContainer = $('.form-container');
+            formContainer.html(form.clone());
+            $('.form-container form').css('display', 'block');
+            formContainer.prepend('<h3 class="contact-heading">' + CONSULT_FORM_HEADING + '</h3>');
         } else {
             closestConsultWrapper.next().remove();
         }
@@ -57,7 +62,7 @@ $(document).ready(function() {
         if ($(this).hasClass('on')) {
             $(this).removeClass('on');
             //Avoid to set background on non index pages
-            if (isIndexPage) {
+            if (location.pathname === HOME_PAGE_URL) {
                 body.attr('id', 'body_with_background');
             }
             bodyImg.css('display', 'block');

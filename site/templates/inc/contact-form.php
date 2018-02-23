@@ -1,4 +1,3 @@
-<h4 class="contact-heading">LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT</h4>
 
 <form
     id="contact_form"
