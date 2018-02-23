@@ -16,8 +16,8 @@
                 <img id="header-logo" src="<?=$pages->get('/')->headerlogo->url?>">
             </a>
         </li>
-        <li><a href="<?=$pages->get('/contact/')->url?>">KONTAKTI</a></li>
-        <li><a href="consultation.php">KONSULTĀCIJAS</a></li>
+        <li><a href="<?=$pages->get('/contact/')->url; ?>">KONTAKTI</a></li>
+        <li><a href="<?=$pages->get('/consultation/')->url; ?>">KONSULTĀCIJAS</a></li>
         <li><a href="training.php">APMĀCĪBAS</a></li>
         <li><a href="publication.php">PUBLIKĀCIJAS</a></li>
         <li><a href="about.php">PAR AUTORU</a></li>

@@ -1,21 +1,16 @@
-/** 
- * @returns {bool}
-*/
-var isIndexPage = (function() {
-    if (location.pathname === '/' || location.pathname === '/gangasvara/') {
-        return true;
-    } else {
-        return false;
-    };
-})();
+
+const CONTACT_PAGE_URL = '/gangasvara/contact/';
+const HOME_PAGE_URL = '/gangasvara/';
+
+
 
 //Set background image to body
 function indexBackground() {
-    if (isIndexPage) {
+    if (location.pathname === HOME_PAGE_URL) {
         $('body').attr('id', 'body_with_background');
-    } 
+    }
     else {
-        //Change color of nav toggler if not on index page
+        //Change color of nav toggler if not on home page
         $('#nav_toggler .line').removeClass('line').addClass('line_grey');
     }
 }
@@ -23,17 +18,26 @@ function indexBackground() {
 $(document).ready(function() {
     //Change background depending on current page
     indexBackground();
-    
+
+
+    /**
+     * Check if on contact page, show form
+     * Default contact form property display:none
+     */
+    var form = $('#contact_form');
+    if (form.attr('data-parent-page') === CONTACT_PAGE_URL) {
+        form.css('display', 'block');
+    }
+
     //Toggle contact form
     $('.buy_button').click(function() {
+
         var closestConsultWrapper = $(this).closest('.consult-wrapper');
-  
+
         if (!closestConsultWrapper.next().is('.form-container')) {
             $('.container > .form-container').remove();
             $('<div class="form-container"></div>').insertAfter(closestConsultWrapper);
-            $('.form-container').load('contact-form.php', function() {
-                $('.contact-heading').css('display', 'block');
-            });
+            $('.form-container').html(form.css('display', 'block').clone());
         } else {
             closestConsultWrapper.next().remove();
         }

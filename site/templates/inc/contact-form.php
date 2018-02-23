@@ -1,6 +1,12 @@
 <h4 class="contact-heading">LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT</h4>
 
-<form id="contact_form" action="<?=$pages->get('/form/')->url() ;?>" method="post">
+<form
+    id="contact_form"
+    method="post"
+    action="<?=$pages->get('/form/')->url() ;?>"
+    data-parent-page="<?=$page->url; ?>"
+    style="display: none;"
+>
     <div>
         <div>
             <input type="text" name="firstname" placeholder="Vārds:">
