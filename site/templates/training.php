@@ -19,16 +19,16 @@
             <div>
                 <h4 class="training_name" style="margin-top:0;">ИНДИВИДУАЛЬНОЕ ОБУЧЕНИЕ</h4>
                 <p style="text-align: justify;"><?=$page->training_text; ?></p>
-                <input class="button" type="button" value="PIETEIKTIES" style="float: right;">
+                <input class="button" type="button" value="PIETEIKTIES" style="margin: 0 0 0 auto;">
             </div>
         </div>
 
         <img class="custom_hr" src="<?=$pages->get('/')->customhr->url; ?>">
 
         <?php
-//            foreach ($page->children() as $trainingItem) {
-//                echo $trainingItem->render();
-//            }
+            foreach ($page->children() as $trainingItem) {
+                echo $trainingItem->render();
+            }
         ?>
         <?php include('./inc/contact-form.php');?>
         <?php include('./inc/footer.php');?>

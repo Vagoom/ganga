@@ -111,7 +111,10 @@ footer ul li a img {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin-top: 6%;
+    margin-top: 3em;
+}
+#contact_form {
+    margin-bottom: 30px;
 }
 #contact_form > input:focus {
     outline: none;
@@ -229,11 +232,13 @@ footer ul li a img {
     font-weight: bold;
 }
 .price {
+    font-size: 30px;
+}
+.consult-price {
     float: left;
     margin-bottom: 3px;
     position: absolute;
     bottom: 0;
-    font-size: 30px;
 }
 .consult-button {
     position: absolute;
@@ -266,9 +271,29 @@ footer ul li a img {
     margin-right:25px;
     margin-bottom:25px;
 }
+.training_button {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.training-info {
+
+}
+.training-info p {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+.training-info h3 {
+    margin-top: unset;
+}
+.lesson-block {
+    margin-bottom: 4%;
+}
+.form-container {
+    clear: both;
+}
 .small_line_spacing {
-    font-size:11.5px;
-    line-height:8px;
+    margin: 0;
 }
 #contact-block {
     display: flex;
@@ -300,6 +325,7 @@ footer ul li a img {
 }
 /* Custom hr */
 .custom_hr {
+    display: block;
     width: 100%;
     height:auto;
     margin-top: 50px;

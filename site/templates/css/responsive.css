@@ -91,4 +91,10 @@ Media screen types:
         margin: 0;
         font-size: 13px;
     }
+    .lesson-block {
+        margin-bottom: 8%;
+    }
+    .small_line_spacing {
+        font-size: 18px;
+    }
 }

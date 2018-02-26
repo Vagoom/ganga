@@ -5,7 +5,7 @@ const TRAINING_PAGE_URL = '/gangasvara/training/';
 const CONSULT_PAGE_URL = '/gangasvara/consultation/';
 
 const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
-const TRAINING_FORM_HEADING = 'LAI PIETEEIKTOS APMĀCĪBĀM, LŪDZAM AIZPILDĪT';
+const TRAINING_FORM_HEADING = 'LAI PIETEIKTOS APMĀCĪBĀM, LŪDZAM AIZPILDĪT';
 
 
 //Set background image to body
@@ -38,11 +38,11 @@ $(document).ready(function() {
      */
     $('.button').click(function() {
 
-        var closestConsultWrapper = $(this).closest('.consult-wrapper, .training-wrapper');
+        var closestDivWrapper = $(this).closest('.consult-wrapper, .training-wrapper');
 
-        if (!closestConsultWrapper.next().is('.form-container')) {
+        if (!closestDivWrapper.next().is('.form-container')) {
             $('.container > .form-container').remove();
-            $('<div class="form-container"></div>').insertAfter(closestConsultWrapper);
+            $('<div class="form-container"></div>').insertAfter(closestDivWrapper);
             var formContainer = $('.form-container');
             formContainer.html(form.clone(true));
             $('.form-container form').css('display', 'block');
@@ -53,7 +53,7 @@ $(document).ready(function() {
                 formContainer.prepend('<h3 class="contact-heading">' + TRAINING_FORM_HEADING + '</h3>');
             }
         } else {
-            closestConsultWrapper.next().remove();
+            closestDivWrapper.next().remove();
         }
     });
 
