@@ -16,6 +16,7 @@ if ($config->ajax) {
     $formFields['lastname'] = $sanitizer->text($input->post('lastname'));
     $formFields['email'] = $sanitizer->email($input->post('email'));
     $formFields['message'] = $sanitizer->textarea($input->post('message'));
+    $formFields['parentPageId'] = $sanitizer->text($input->post('parent-page'));
 
 
     foreach ($formFields as $fieldName => $fieldValue) {
@@ -54,16 +55,17 @@ if ($config->ajax) {
     if ($response['status'] === STATUS_SUCCESS) {
 
         /** Create database record as new Processwire page */
-//        $page = new Page();
-//        $page->template = 'form-handler';
-//        $page->of(false);
-//        $page->parent = $pages->get('/form/');
-//        $page->title  = date('d-m-Y G:i',time()) . ' from: ' . $formFields['email'];
-//        $page->firstname = $formFields['firstname'];
-//        $page->lastname = $formFields['lastname'];
-//        $page->senderemail =  $formFields['email'];
-//        $page->message = $formFields['message'];
-//        $page->save();
+        $page = new Page();
+        $page->template = 'form';
+        $page->of(false);
+        $page->request_type = $pages->get($formFields['parentPageId'])->title;
+        $page->parent = $pages->get('/form/');
+        $page->title  = date('d-m-Y G:i',time()) . ' from: ' . $formFields['email'];
+        $page->firstname = $formFields['firstname'];
+        $page->lastname = $formFields['lastname'];
+        $page->senderemail =  $formFields['email'];
+        $page->message = $formFields['message'];
+        $page->save();
 
         /** Send mail to website owner */
 //        $mail = $mail->new();
@@ -83,9 +85,7 @@ if ($config->ajax) {
 //        $m->param('-f you@company.com'); // PHP mail() param (envelope from example)
 
     }
-
-
-echo json_encode($response);
+    echo json_encode($response);
 
 
 

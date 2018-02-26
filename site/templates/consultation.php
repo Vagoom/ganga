@@ -11,8 +11,7 @@
 <body>
     <div class="container">
         <?php include('./inc/header.php'); ?>
-
-        <h2 class="content_name">KONSULTĀCIJAS</h2>
+        <h2 class="content_name"><?=$page->title ;?></h2>
 
         <?php
             $customHrUrl = $pages->get('/')->customhr->url;
@@ -22,10 +21,10 @@
                 if (count($page->children()) > $counter) {
                     echo '<img class="custom_hr" src="' . $customHrUrl . '">';
                 }
+                /** Avoid to render custom hr at the end of the list */
                 $counter++;
             }
         ?>
-
         <?php include('./inc/contact-form.php');?>
         <?php include('./inc/footer.php');?>
     </div>

@@ -1,7 +1,11 @@
 
 const CONTACT_PAGE_URL = '/gangasvara/contact/';
 const HOME_PAGE_URL = '/gangasvara/';
+const TRAINING_PAGE_URL = '/gangasvara/training/';
+const CONSULT_PAGE_URL = '/gangasvara/consultation/';
+
 const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
+const TRAINING_FORM_HEADING = 'LAI PIETEEIKTOS APMĀCĪBĀM, LŪDZAM AIZPILDĪT';
 
 
 //Set background image to body
@@ -27,22 +31,27 @@ $(document).ready(function() {
     var form = $('#contact_form');
     if (form.attr('data-parent-page') === CONTACT_PAGE_URL) {
         form.css('display', 'block');
-    }
+}
 
     /**
      * Toggle contact form on consultation page
      */
-    $('.buy_button').click(function() {
+    $('.button').click(function() {
 
-        var closestConsultWrapper = $(this).closest('.consult-wrapper');
+        var closestConsultWrapper = $(this).closest('.consult-wrapper, .training-wrapper');
 
         if (!closestConsultWrapper.next().is('.form-container')) {
             $('.container > .form-container').remove();
             $('<div class="form-container"></div>').insertAfter(closestConsultWrapper);
             var formContainer = $('.form-container');
-            formContainer.html(form.clone());
+            formContainer.html(form.clone(true));
             $('.form-container form').css('display', 'block');
-            formContainer.prepend('<h3 class="contact-heading">' + CONSULT_FORM_HEADING + '</h3>');
+            if (form.attr('data-parent-page') === CONSULT_PAGE_URL) {
+                formContainer.prepend('<h3 class="contact-heading">' + CONSULT_FORM_HEADING + '</h3>');
+            }
+            else if (form.attr('data-parent-page') === TRAINING_PAGE_URL) {
+                formContainer.prepend('<h3 class="contact-heading">' + TRAINING_FORM_HEADING + '</h3>');
+            }
         } else {
             closestConsultWrapper.next().remove();
         }
@@ -120,8 +129,6 @@ $(document).ready(function() {
             }
         });
         if (validator.form()) {
-            alert('go query');
-
             //Disable submit button while processing
             $(this).attr('disabled', true).val('');
 

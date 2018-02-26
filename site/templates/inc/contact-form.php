@@ -11,6 +11,7 @@
             <input type="text" name="firstname" placeholder="Vārds:">
             <input type="text" name="lastname" placeholder="Uzvārds">
             <input type="text" name="email" placeholder="Epasts:">
+            <input type="hidden" name="parent-page" value="<?=$page->id; ?>">
         </div>
         <div>
             <textarea name="message" placeholder="Teksts:"></textarea>
