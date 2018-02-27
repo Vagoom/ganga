@@ -33,7 +33,7 @@ p {
 }
 #header-logo {
     width:200px;
-    height:auto;
+    height:100%;
 }
 #navbar {
     display: flex;
@@ -142,6 +142,7 @@ footer ul li a img {
     outline: none;
     display: block;
     width: 100%;
+    overflow: auto;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -236,7 +237,6 @@ footer ul li a img {
     font-size: 30px;
 }
 .consult-price {
-    float: left;
     margin-bottom: 3px;
     position: absolute;
     bottom: 0;
@@ -267,6 +267,7 @@ footer ul li a img {
 .content_img {
     display: block;
     max-width: 100%;
+    height: auto;
     margin: auto;
 }
 .training_img {
@@ -284,11 +285,11 @@ footer ul li a img {
 
 }
 .training-info p {
-    margin-top: unset;
-    margin-bottom: unset;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .training-info h3 {
-    margin-top: unset;
+    margin-top: 0;
 }
 .lesson-block {
     margin-bottom: 4%;

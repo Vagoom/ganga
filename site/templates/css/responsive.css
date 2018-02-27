@@ -36,7 +36,7 @@
         flex-direction: column;
     }
     #contact_form textarea {
-        margin-left: unset;
+        margin-left: 0;
     }
     #contact_form > div div {
         width: 100%;
@@ -45,10 +45,12 @@
         flex-direction: column;
     }
     .item-wrapper div:first-child {
-        width: unset;
+        width: 100%;
+        height: 100%;
     }
     .item_div {
-        width: unset;
+        width: 100%;
+        margin-left: 0;
     }
     .item_div > div {
         margin-top: 80px;
@@ -60,7 +62,7 @@
         flex-direction: column;
     }
     footer ul li {
-        padding: unset;
+        padding: 0;
     }
     footer ul li p {
         margin: 0;
@@ -74,5 +76,8 @@
     }
     .training-info p {
         font-weight: bold;
+    }
+    .item_name {
+        margin-top: 30px;
     }
 }
