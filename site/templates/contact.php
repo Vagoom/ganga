@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <?php include('./inc/header.php'); ?>
-        <h2 class="content_name">KONTAKTI</h2>
+        <h2 class="content_name"><?=$page->title; ?></h2>
         <div id="contact-block">
             <div>
                 <img  src="<?=$page->authorimg->url?>" width="150px">
@@ -23,7 +23,7 @@
                 </ul>
             </div>
             <div>
-                <p><?=$page->contentdescription?></p>
+                <p><?=$page->item_text?></p>
             </div>
         </div>
         <img class="custom_hr" src="<?=$pages->get('/')->customhr->url?>">

@@ -38,7 +38,7 @@ $(document).ready(function() {
      */
     $('.button').click(function() {
 
-        var closestDivWrapper = $(this).closest('.consult-wrapper, .training-wrapper');
+        var closestDivWrapper = $(this).closest('.item-wrapper, .training-wrapper');
 
         if (!closestDivWrapper.next().is('.form-container')) {
             $('.container > .form-container').remove();
@@ -46,12 +46,14 @@ $(document).ready(function() {
             var formContainer = $('.form-container');
             formContainer.html(form.clone(true));
             $('.form-container form').css('display', 'block');
+            $('.form-container form input').focus();
             if (form.attr('data-parent-page') === CONSULT_PAGE_URL) {
                 formContainer.prepend('<h3 class="contact-heading">' + CONSULT_FORM_HEADING + '</h3>');
             }
             else if (form.attr('data-parent-page') === TRAINING_PAGE_URL) {
                 formContainer.prepend('<h3 class="contact-heading">' + TRAINING_FORM_HEADING + '</h3>');
             }
+
         } else {
             closestDivWrapper.next().remove();
         }

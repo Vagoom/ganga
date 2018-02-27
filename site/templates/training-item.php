@@ -11,7 +11,6 @@
             }
         ?>
     </div>
-    <input class="button training_button" type="button" value="PIRKT" style="display: none">
 </div>
 
 

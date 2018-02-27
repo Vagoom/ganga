@@ -19,11 +19,9 @@
         <li><a href="<?=$pages->get('/contact/')->url; ?>"><?=$pages->get('/contact/')->title; ?></a></li>
         <li><a href="<?=$pages->get('/consultation/')->url; ?>"><?=$pages->get('/consultation/')->title; ?></a></li>
         <li><a href="<?=$pages->get('/training/')->url; ?>"><?=$pages->get('/training/')->title; ?></a></li>
-        <li><a href="#">PUBLIKĀCIJAS</a></li>
-        <li><a href="#">PAR AUTORU</a></li>
-        <li>
-            <a href="#youtube">YOUTUBE</a>
-        </li>
+        <li><a href="<?=$pages->get('/publication/')->url; ?>"><?=$pages->get('/publication/')->title; ?></a></li>
+        <li><a href="<?=$pages->get('/about/')->url; ?>"><?=$pages->get('/about/')->title; ?></a></li>
+        <li><a href="#youtube">YOUTUBE</a></li>
     </ul>
     
     <!-- Toggles on mobile view -->
@@ -32,8 +30,8 @@
             <li><a href="<?=$pages->get('/contact/')->url; ?>"><?=$pages->get('/contact/')->title; ?></a></li>
             <li><a href="<?=$pages->get('/consultation/')->url; ?>"><?=$pages->get('/consultation/')->title; ?></a></li>
             <li><a href="<?=$pages->get('/training/')->url; ?>"><?=$pages->get('/training/')->title; ?></a></li>
-            <li><a href="#">PUBLIKĀCIJAS</a></li>
-            <li><a href="#">PAR AUTORU</a></li>
+            <li><a href="<?=$pages->get('/publication/')->url; ?>"><?=$pages->get('/publication/')->title; ?></a></li>
+            <li><a href="<?=$pages->get('/about/')->url; ?>"><?=$pages->get('/about/')->title; ?></a></li>
             <li><a href="#youtube">YOUTUBE</a></li>
             <li>
                 <div id="mobile_search_container">

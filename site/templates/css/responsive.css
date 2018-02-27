@@ -1,29 +1,4 @@
-/* 
-Media screen types:
-    @media (min-width: 576px) {
-        .container {
-            max-width: 540px;
-        }
-    }
 
-    @media (min-width: 768px) {
-        .container {
-            max-width: 720px;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .container {
-            max-width: 960px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1140px;
-        }
-    }
-*/
 @media screen and (max-width: 768px) 
 {
     #nav_toggler {
@@ -66,16 +41,16 @@ Media screen types:
     #contact_form > div div {
         width: 100%;
     }
-    .consult-wrapper {
+    .item-wrapper {
         flex-direction: column;
     }
-    .consult-wrapper div:first-child {
+    .item-wrapper div:first-child {
         width: unset;
     }
-    .consult_div {
+    .item_div {
         width: unset;
     }
-    .consult_div > div {
+    .item_div > div {
         margin-top: 80px;
     }
     footer ul li a img {
@@ -95,6 +70,9 @@ Media screen types:
         margin-bottom: 8%;
     }
     .small_line_spacing {
-        font-size: 18px;
+        font-size: initial;
+    }
+    .training-info p {
+        font-weight: bold;
     }
 }

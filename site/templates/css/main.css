@@ -81,9 +81,10 @@ p {
     text-align: center;
     color: #f5b01c;
 }
-.consult_name, .price, .training_name, .publication_name {
+.item_name, .price, .training_name, .publication_name {
     font-weight: bold;
     color: #f5b01c;
+    text-transform: uppercase;
 }
 /* Footer block */
 footer {
@@ -240,22 +241,25 @@ footer ul li a img {
     position: absolute;
     bottom: 0;
 }
-.consult-button {
+.consult-button, .publication_button {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+.publication_button {
+    font-size: 13px;
+}
 /* Consultation page */
-.consult-wrapper {
+.item-wrapper {
     display: flex;
 }
-.consult-wrapper div:first-child {
+.item-wrapper div:first-child {
     width: 40%;
 }
-.consult_name {
+.item_name {
     margin-top: 3px;
 }
-.consult_div {
+.item_div {
     position: relative;
     width: 60%;
     margin-left: 3.5%;
