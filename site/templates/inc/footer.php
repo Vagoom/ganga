@@ -1,7 +1,7 @@
 <footer>
     <ul>
         <li>
-            <a href="#"><img src="<?= $config->urls->templates?>img/email.png"></a>
+            <a href="#"><img src="<?= $config->urls->templates?>img/email.png" style="width:65px;"></a>
             <p><span style="color: #f5b01c;">Email</span>: gangesvara@mail.ru</p>
         </li>
         <li>
