@@ -1,8 +1,8 @@
 
-const CONTACT_PAGE_URL = '/gangasvara/contact/';
-const HOME_PAGE_URL = '/gangasvara/';
-const TRAINING_PAGE_URL = '/gangasvara/training/';
-const CONSULT_PAGE_URL = '/gangasvara/consultation/';
+const CONTACT_PAGE_URL = '/gangesvara/contact/';
+const HOME_PAGE_URL = '/gangesvara/';
+const TRAINING_PAGE_URL = '/gangesvara/training/';
+const CONSULT_PAGE_URL = '/gangesvara/consultation/';
 
 const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
 const TRAINING_FORM_HEADING = 'LAI PIETEIKTOS APMĀCĪBĀM, LŪDZAM AIZPILDĪT';
@@ -60,8 +60,8 @@ $(document).ready(function() {
     });
 
     //Some search action...
-    $('#search_button, #mobile_search_button').click(function(){
-        alert('searchAction');
+    $('#search_button, #mobile_search_button').click(function(event){
+        event.preventDefault();
     });
 
     //Nav toggler actions

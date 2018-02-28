@@ -1,25 +1,33 @@
 
 
 @font-face {
-    font-family: MinionPro-Regular;
-    src: url("../fonts/MinionPro-Regular.otf") format("opentype");
+    font-family: "MinionPro-Regular";
+    src: url("../fonts/MinionPro-Regular.otf") format("opentype"),
+         url("../fonts/MinionPro-Regular.eot") format("embedded-opentype");
+    ;
 }
 body {
-    font-family: MinionPro-Regular;
+    font-family: Verdana;
+    margin: 0;
 }
 p {
     color: #808285;
 }
 .container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
+    /*width: 100%;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*position: relative;*/
+    height: auto;
+    min-height: 100%;
+    margin: 0px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
 }
 #body_with_background {
-    background: url('../img/background.png') no-repeat center center fixed; 
+    background: url('../img/background.png') no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
@@ -30,6 +38,9 @@ p {
     width: 400px;
     height: auto;
     border-style: none;
+}
+header {
+    position: relative;
 }
 #header-logo {
     width:200px;

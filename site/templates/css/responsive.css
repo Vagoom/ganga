@@ -1,6 +1,10 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
 
-@media screen and (max-width: 768px) 
-{
+@media screen and (max-width: 992px) {
     #nav_toggler {
         display: block;
     }
@@ -17,20 +21,21 @@
         display: none;
     }
 }
-@media screen and (max-width: 425px) {
-    #center-logo {
-        width: 225px;
-        margin-top: 85px;
+
+@media screen and (max-width: 768px)
+{
+    footer ul li a img {
+        display: none;
     }
-    #contact-block {
-        flex-direction: column-reverse;
+    footer ul {
+        flex-direction: column;
     }
-    #contact-block div:nth-child(2) {
-        margin-left: unset;
+    footer ul li {
+        padding: 0;
     }
-    #subscribe_bar li a img {
-        width: 30px;
-        height: auto;
+    footer ul li p {
+        margin: 0;
+        font-size: 13px;
     }
     #contact_form > div {
         flex-direction: column;
@@ -40,6 +45,28 @@
     }
     #contact_form > div div {
         width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    #contact-block {
+        flex-direction: column-reverse;
+    }
+    #contact-block div:nth-child(2) {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #center-logo {
+        width: 225px;
+        margin-top: 85px;
+    }
+    #subscribe_bar li a img {
+        width: 30px;
+        height: auto;
     }
     .item-wrapper {
         flex-direction: column;
@@ -54,19 +81,6 @@
     }
     .item_div > div {
         margin-top: 80px;
-    }
-    footer ul li a img {
-        display: none;
-    }
-    footer ul {
-        flex-direction: column;
-    }
-    footer ul li {
-        padding: 0;
-    }
-    footer ul li p {
-        margin: 0;
-        font-size: 13px;
     }
     .lesson-block {
         margin-bottom: 8%;
