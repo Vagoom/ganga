@@ -46,6 +46,23 @@
     #contact_form > div div {
         width: 100%;
     }
+    .item-wrapper {
+        flex-direction: column;
+    }
+    .item-wrapper div:first-child {
+        width: 100%;
+        height: 100%;
+    }
+    .item_div {
+        width: 100%;
+        margin-left: 0;
+    }
+    .item_div > div {
+        margin-top: 80px;
+    }
+    .item_name {
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width: 576px) {
     #contact-block {
@@ -68,20 +85,6 @@
         width: 30px;
         height: auto;
     }
-    .item-wrapper {
-        flex-direction: column;
-    }
-    .item-wrapper div:first-child {
-        width: 100%;
-        height: 100%;
-    }
-    .item_div {
-        width: 100%;
-        margin-left: 0;
-    }
-    .item_div > div {
-        margin-top: 80px;
-    }
     .lesson-block {
         margin-bottom: 8%;
     }
@@ -90,8 +93,5 @@
     }
     .training-info p {
         font-weight: bold;
-    }
-    .item_name {
-        margin-top: 30px;
     }
 }
