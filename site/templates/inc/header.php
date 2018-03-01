@@ -5,7 +5,7 @@
         <div class="line line3"></div>
     </div>
     <div id="search_container">
-        <form action="post">
+        <form action="<?=$pages->get('/results')->url; ?>" method="get">
             <input type="search" name="search">
             <input id="search_button" type="image" src="<?= $config->urls->templates?>img/search-icon.png">
         </form>

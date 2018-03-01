@@ -25,6 +25,20 @@
             $counter++;
         }
         ?>
+        <?php
+//        $customHrUrl = $pages->get('/')->customhr->url;
+//        $counter = 1;
+//        $p = $page->children("limit=1");
+//        foreach ($p as $publication) {
+//            echo $publication->render();
+//            if (count($page->children()) > $counter) {
+//                echo '<img class="custom_hr" src="' . $customHrUrl . '">';
+//            }
+//            /** Avoid to render custom hr at the end of the list */
+//            $counter++;
+//        }
+//        echo $p->renderPager();
+        ?>
 
         <?php include('./inc/footer.php');?>
     </div>

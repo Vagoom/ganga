@@ -15,10 +15,6 @@ p {
     color: #808285;
 }
 .container {
-    /*width: 100%;*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-    /*position: relative;*/
     height: auto;
     min-height: 100%;
     margin: 0px auto;
@@ -206,6 +202,15 @@ footer ul li a img {
     position: absolute;
     bottom: 3px;
     right: 3px;
+}
+#search-list {
+    text-transform: uppercase;
+    font-size: 14px;
+    list-style: none;
+}
+#search-list li a {
+    font-size: 14px;
+    color: #f5b01c;
 }
 /* Mobile search container */
 #mobile_search_container {

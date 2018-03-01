@@ -61,7 +61,8 @@ $(document).ready(function() {
 
     //Some search action...
     $('#search_button, #mobile_search_button').click(function(event){
-        event.preventDefault();
+        // event.preventDefault();
+
     });
 
     //Nav toggler actions
