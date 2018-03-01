@@ -7,7 +7,7 @@
         <h4 class="item_name"><?=$page->title; ?></h4>
         <p><?=$page->item_text; ?></p>
         <div>
-            <input class="button publication_button" type="button" value="LASĪT VAIRĀK">
+<!--            <input class="button publication_button" type="submit" value="LASĪT VAIRĀK">-->
         </div>
     </div>
 </div>

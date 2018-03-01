@@ -14,30 +14,18 @@
         <h2 class="content_name"><?=$page->heading ;?></h2>
 
         <?php
-        $customHrUrl = $pages->get('/')->customhr->url;
-        $counter = 1;
-        foreach ($page->children() as $publication) {
+            $customHrUrl = $pages->get('/')->customhr->url;
+            $childs = $page->children("limit=3");
+            $childCounter = count($childs);
+
+        foreach ($childs as $publication) {
             echo $publication->render();
-            if (count($page->children()) > $counter) {
+            if ($childCounter > 1) {
                 echo '<img class="custom_hr" src="' . $customHrUrl . '">';
             }
-            /** Avoid to render custom hr at the end of the list */
-            $counter++;
+            $childCounter--;
         }
-        ?>
-        <?php
-//        $customHrUrl = $pages->get('/')->customhr->url;
-//        $counter = 1;
-//        $p = $page->children("limit=1");
-//        foreach ($p as $publication) {
-//            echo $publication->render();
-//            if (count($page->children()) > $counter) {
-//                echo '<img class="custom_hr" src="' . $customHrUrl . '">';
-//            }
-//            /** Avoid to render custom hr at the end of the list */
-//            $counter++;
-//        }
-//        echo $p->renderPager();
+            echo $childs->renderPager(['nextItemLabel' => 'Tālāk', 'previousItemLabel' => 'Atpakaļ']);
         ?>
 
         <?php include('./inc/footer.php');?>

@@ -212,6 +212,21 @@ footer ul li a img {
     font-size: 14px;
     color: #f5b01c;
 }
+.MarkupPagerNav {
+    margin-top: 13%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    list-style: none;
+}
+.MarkupPagerNav li {
+    display: inline;
+}
+.MarkupPagerNav li a {
+    font-size: 14px;
+    color: #808285;
+    text-decoration: none;
+}
 /* Mobile search container */
 #mobile_search_container {
     text-align: center;
