@@ -21,7 +21,7 @@
         <li><a href="<?=$pages->get('/training/')->url; ?>"><?=$pages->get('/training/')->title; ?></a></li>
         <li><a href="<?=$pages->get('/publication/')->url; ?>"><?=$pages->get('/publication/')->title; ?></a></li>
         <li><a href="<?=$pages->get('/about/')->url; ?>"><?=$pages->get('/about/')->title; ?></a></li>
-        <li><a href="#youtube">YOUTUBE</a></li>
+        <li><a href="<?=$pages->get('/contact/')->youtube_channel?>">YOUTUBE</a></li>
     </ul>
     
     <!-- Toggles on mobile view -->
@@ -32,10 +32,10 @@
             <li><a href="<?=$pages->get('/training/')->url; ?>"><?=$pages->get('/training/')->title; ?></a></li>
             <li><a href="<?=$pages->get('/publication/')->url; ?>"><?=$pages->get('/publication/')->title; ?></a></li>
             <li><a href="<?=$pages->get('/about/')->url; ?>"><?=$pages->get('/about/')->title; ?></a></li>
-            <li><a href="#youtube">YOUTUBE</a></li>
+            <li><a href="<?=$pages->get('/contact/')->youtube_channel?>">YOUTUBE</a></li>
             <li>
                 <div id="mobile_search_container">
-                    <form action="post">
+                    <form action="<?=$pages->get('/results')->url; ?>" method="get">
                         <input type="search" name="search">
                         <input id="mobile_search_button" type="image" src="<?= $config->urls->templates?>img/search-icon.png">
                     </form>

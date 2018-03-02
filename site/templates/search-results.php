@@ -21,7 +21,7 @@
                 $searchTerm = $sanitizer->text($searchTerm);
                 $foundPages = $pages->find("item_text|title|training_text~=$searchTerm");
 
-                $content =  '<h2 class="content_name">' . $searchTerm . '</h2>';
+                $content =  '<h2 class="content_name">"' . $searchTerm . '"</h2>';
                 $content .= '<h2 class="content_name">Atrasti ' . count($foundPages) . ' rezultāti(s)</h2>';
                 $content .= '<ul id="search-list">';
                 foreach ($foundPages as $page) {

@@ -19,7 +19,7 @@
             $childCounter = count($childs);
 
         foreach ($childs as $publication) {
-            echo $publication->render();
+            echo $publication->render('./render/publication-preview.php');
             if ($childCounter > 1) {
                 echo '<img class="custom_hr" src="' . $customHrUrl . '">';
             }
@@ -31,12 +31,7 @@
         <?php include('./inc/footer.php');?>
     </div>
 
-    <!-- Jquery CDN -->
-    <script
-            src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous">
-    </script>
+    <script src="<?=$config->urls->templates?>js/libs/jquery-3.3.1.min.js"></script>
     <script src="<?=$config->urls->templates?>js/main.js"></script>
     <script src="<?=$config->urls->templates?>js/libs/jquery.validate.min.js"></script>
 </body>
