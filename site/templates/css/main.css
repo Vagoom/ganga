@@ -6,9 +6,14 @@
          url("../fonts/MinionPro-Regular.eot") format("embedded-opentype");
     ;
 }
+html{
+    height:100%;
+    min-height:100%;
+}
 body {
     font-family: Verdana;
     margin: 0;
+    min-height:100%;
 }
 p {
     font-size: 14px;
@@ -27,6 +32,12 @@ p {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 #center-logo {
     display: block;
@@ -145,7 +156,7 @@ footer ul li a img {
     width: 49%;
 }
 #contact_form input, textarea {
-    border: 2px solid #808285;
+    border: 1px solid #808285;
     resize: none;
     outline: none;
     display: block;
