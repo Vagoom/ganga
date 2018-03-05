@@ -18,8 +18,16 @@
                 <div>
                     <p style="color:grey">SEKO</p>
                     <ul id="subscribe_bar">
-                        <li><a href="<?=$page->facebook_profile; ?>"><img src="<?=$config->urls->templates?>img/fb.png"></a></li>
-                        <li><a href="<?=$page->youtube_channel; ?>"><img src="<?=$config->urls->templates?>img/yt.png"></a></li>
+                        <li>
+                            <a href="<?=$page->facebook_profile; ?>" target="_blank">
+                                <img src="<?=$config->urls->templates?>img/fb.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?=$page->youtube_channel; ?>" target="_blank">
+                                <img src="<?=$config->urls->templates?>img/yt.png">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
