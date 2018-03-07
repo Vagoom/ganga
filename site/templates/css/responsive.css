@@ -43,6 +43,9 @@
     #contact_form textarea {
         margin-left: 0;
     }
+    #message-error {
+        margin-left: 0;
+    }
     #contact_form > div div {
         width: 100%;
     }

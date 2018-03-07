@@ -8,14 +8,14 @@
 >
     <div>
         <div>
-            <input type="text" name="firstname" placeholder="Vārds:">
-            <input type="text" name="lastname" placeholder="Uzvārds">
-            <input type="text" name="email" placeholder="Epasts:">
+            <input type="text" name="firstname" placeholder="Имя:">
+            <input type="text" name="lastname" placeholder="Фамилия">
+            <input type="text" name="email" placeholder="Email:">
             <input type="hidden" name="parent-page" value="<?=$page->id; ?>">
         </div>
         <div>
-            <textarea name="message" placeholder="Teksts:"></textarea>
+            <textarea name="message" placeholder="Текст:"></textarea>
         </div>
     </div>
-    <input id="send-form-btn" type="button" name="send" value="SŪTĪT" style="height: 50px">
+    <input id="send-form-btn" type="button" name="send" value="ОТПРАВИТЬ" style="height: 50px">
 </form>

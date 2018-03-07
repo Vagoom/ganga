@@ -7,7 +7,7 @@
         <p><?=$page->item_text; ?></p>
         <div>
             <form method="get" action="<?=$page->url?>">
-                <input class="button publication_button" type="submit" value="LASĪT VAIRĀK">
+                <input class="button publication_button" type="submit" value="ЧИТАТЬ">
             </form>
         </div>
     </div>

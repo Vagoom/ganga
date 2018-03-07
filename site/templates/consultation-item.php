@@ -9,7 +9,7 @@
         <p><?=$page->item_text; ?></p>
         <div>
             <h3 class="price consult-price"><?=$page->consultation_price; ?></h3>
-            <input class="button consult-button" type="button" value="PIRKT">
+            <input class="button consult-button" type="button" value="КУПИТЬ">
         </div>
     </div>
 </div>

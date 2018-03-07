@@ -5,7 +5,7 @@ const TRAINING_PAGE_URL = '/gangesvara/training/';
 const CONSULT_PAGE_URL = '/gangesvara/consultation/';
 
 const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
-const TRAINING_FORM_HEADING = 'LAI PIETEIKTOS APMĀCĪBĀM, LŪDZAM AIZPILDĪT';
+const TRAINING_FORM_HEADING = 'ПОЖАЛУЙСТА ЗАПОЛНИТЕ';
 
 
 //Set background image to body

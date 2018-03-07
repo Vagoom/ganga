@@ -146,6 +146,9 @@ footer ul li a img {
     padding-bottom: 73px;
     margin-left: 4%;
 }
+#message-error {
+    margin-left: 4%;
+}
 #contact_form > div {
     display: flex;
 }
