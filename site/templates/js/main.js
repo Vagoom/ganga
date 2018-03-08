@@ -1,11 +1,7 @@
 
 const CONTACT_PAGE_URL = '/gangesvara/contact/';
 const HOME_PAGE_URL = '/gangesvara/';
-const TRAINING_PAGE_URL = '/gangesvara/training/';
-const CONSULT_PAGE_URL = '/gangesvara/consultation/';
-
-const CONSULT_FORM_HEADING = 'LAI IEGĀDĀTOS, LŪDZAM AIZPILDĪT';
-const TRAINING_FORM_HEADING = 'ПОЖАЛУЙСТА ЗАПОЛНИТЕ';
+const FORM_HEADING = 'ПОЖАЛУЙСТА ЗАПОЛНИТЕ';
 
 
 //Set background image to body
@@ -34,10 +30,9 @@ $(document).ready(function() {
 }
 
     /**
-     * Toggle contact form on consultation page
+     * Toggle user form
      */
-    $('.button').click(function() {
-
+    $('.button:not(.publication_button)').click(function() {
         var closestDivWrapper = $(this).closest('.item-wrapper, .training-wrapper');
 
         if (!closestDivWrapper.next().is('.form-container')) {
@@ -47,22 +42,10 @@ $(document).ready(function() {
             formContainer.html(form.clone(true));
             $('.form-container form').css('display', 'block');
             $('.form-container form input').focus();
-            if (form.attr('data-parent-page') === CONSULT_PAGE_URL) {
-                formContainer.prepend('<h3 class="contact-heading">' + CONSULT_FORM_HEADING + '</h3>');
-            }
-            else if (form.attr('data-parent-page') === TRAINING_PAGE_URL) {
-                formContainer.prepend('<h3 class="contact-heading">' + TRAINING_FORM_HEADING + '</h3>');
-            }
-
+            formContainer.prepend('<h3 class="contact-heading">' + FORM_HEADING + '</h3>');
         } else {
             closestDivWrapper.next().remove();
         }
-    });
-
-    //Some search action...
-    $('#search_button, #mobile_search_button').click(function(event){
-        // event.preventDefault();
-
     });
 
     //Nav toggler actions
