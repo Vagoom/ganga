@@ -106,7 +106,7 @@
     .lesson-block {
         margin-bottom: 8%;
     }
-    .small_line_spacing {
+    .lesson-block p {
         font-size: initial;
     }
     .training-info p {
