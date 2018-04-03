@@ -1,7 +1,7 @@
 <?php
     const OWNER_EMAIL = 'gangesvara108@gmail.com';
     const OWNER_SKYPE = 'Александр Сангаван';
-    const OWNER_WHATSAPP = '+372 58102944';
+    const OWNER_WHATSAPP = '+371 28920360';
 ?>
 
 <footer>

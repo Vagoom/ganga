@@ -19,7 +19,7 @@
                 <div class="item_div">
                     <p><?=$page->item_text; ?></p>
                     <div>
-                        <input class="button publication_button" type="button" value="ATPAKAĻ" onclick="goBack()">
+                        <input class="button publication_button" type="button" value="ОБРАТНО" onclick="goBack()">
                     </div>
                 </div>
             </div>

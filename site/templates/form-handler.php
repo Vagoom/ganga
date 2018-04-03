@@ -3,6 +3,11 @@
 const STATUS_SUCCESS = 1;
 const STATUS_ERROR = 2;
 
+const FIRSTNAME_REQUIRED_ERROR_MSG = 'Пожалуйста введите имя';
+const LASTNAME_REQUIRED_ERROR_MSG = 'Пожалуйста введите фамилию';
+const NOT_VALID_EMAIL_MSG = 'Е-почта введена не правильно. Пожалуйста проверьте и введите заново';
+const MESSAGE_REQUIRED = 'Пожалуйста введите сообщение';
+
 if ($config->ajax) {
 
     $formFields = [];
@@ -27,25 +32,25 @@ if ($config->ajax) {
                 case 'firstname':
                     $response['fieldErrors'][] = [
                         'field' => $fieldName,
-                        'errorMessage' => __('Lūdzu ievadiet vārdu.')
+                        'errorMessage' => FIRSTNAME_REQUIRED_ERROR_MSG
                     ];
                     break;
                 case 'lastname':
                     $response['fieldErrors'][] = [
                         'field' => $fieldName,
-                        'errorMessage' => __('Lūdzu ievadiet uzvārdu.')
+                        'errorMessage' => LASTNAME_REQUIRED_ERROR_MSG
                     ];
                     break;
                 case 'email':
                     $response['fieldErrors'][] = [
                         'field' => $fieldName,
-                        'errorMessage' => __('E-pasts ievadīts nepareizi. Lūdzu pārbaudiet un ievadiet vēlreiz.')
+                        'errorMessage' => NOT_VALID_EMAIL_MSG
                     ];
                     break;
                 case 'message':
                     $response['fieldErrors'][] = [
                         'field' => $fieldName,
-                        'errorMessage' => __('Lūdzu ievadiet ziņojumu.')
+                        'errorMessage' => MESSAGE_REQUIRED
                     ];
                     break;
             }

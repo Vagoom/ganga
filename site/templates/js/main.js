@@ -3,6 +3,15 @@ const CONTACT_PAGE_URL = '/gangesvara/contact/';
 const HOME_PAGE_URL = '/gangesvara/';
 const FORM_HEADING = 'ПОЖАЛУЙСТА ЗАПОЛНИТЕ';
 
+const FIRSTNAME_REQUIRED_ERROR_MSG = 'Пожалуйста введите имя';
+const FIRSTNAME_LENGTH_ERROR_MSG = 'Имя должно содержать от 1 до 255 символов';
+const LASTNAME_REQUIRED_ERROR_MSG = 'Пожалуйста введите фамилию';
+const LASTNAME_LENGTH_ERROR_MSG = 'Фамилия должна содержать от 1 до 255 символов';
+const EMAIL_REQUIRED_ERROR_MSG = 'Пожалуйста введите е-почту';
+const NOT_VALID_EMAIL_MSG = 'Е-почта введена не правильно. Пожалуйста проверьте и введите заново';
+const MESSAGE_REQUIRED = 'Пожалуйста введите сообщение';
+const NOT_VALID_MESSAGE_LENGTH = 'Сообщение должно содержать от 5 до 255 символов';
+
 
 //Set background image to body
 function indexBackground() {
@@ -19,6 +28,12 @@ $(document).ready(function() {
     //Change background depending on current page
     indexBackground();
 
+    /**
+     * Hack for IE height: auto fix
+     */
+    if (navigator.userAgent.match(/msie/i) || navigator.userAgent.match(/trident/i) ){
+        $('#header-logo').css('height', '100%');
+    }
 
     /**
      * Check if on contact page, show form
@@ -97,20 +112,20 @@ $(document).ready(function() {
             },
             messages: {
                 firstname: {
-                    required: 'Lūdzu ievadiet vārdu.',
-                    rangelength: 'Vārdam ir jāsastāv no 1 līdz 255 simboliem'
+                    required: FIRSTNAME_REQUIRED_ERROR_MSG,
+                    rangelength: FIRSTNAME_LENGTH_ERROR_MSG
                 },
                 lastname: {
-                    required: 'Lūdzu ievadiet uzvārdu.',
-                    rangelength: 'Uzvārdam ir jāsastāv no 1 līdz 255 simboliem'
+                    required: LASTNAME_REQUIRED_ERROR_MSG,
+                    rangelength: LASTNAME_LENGTH_ERROR_MSG
                 },
                 email: {
-                    required: 'Lūdzu ievadiet e-pastu.',
-                    email: 'E-pasts ievadīts nepareizi. Lūdzu pārbaudiet un ievadiet vēlreiz.'
+                    required: EMAIL_REQUIRED_ERROR_MSG,
+                    email: NOT_VALID_EMAIL_MSG
                 },
                 message: {
-                    required: 'Lūdzu ievadiet ziņojumu.',
-                    rangelength: 'Ziņojumam ir jāsastāv no 5 līdz 255 simboliem'
+                    required: MESSAGE_REQUIRED,
+                    rangelength: NOT_VALID_MESSAGE_LENGTH
                 }
             }
         });

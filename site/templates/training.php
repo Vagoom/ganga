@@ -18,7 +18,7 @@
             </div>
             <div>
                 <h4 class="training_name" style="margin-top:0;">ИНДИВИДУАЛЬНОЕ ОБУЧЕНИЕ</h4>
-                <p style="text-align: justify;"><?=$page->training_text; ?></p>
+                <p style="text-align: justify;"><?=$page->item_text; ?></p>
                 <input class="button" type="button" value="УЧУСЬ" style="margin: 0 0 0 auto;">
             </div>
         </div>

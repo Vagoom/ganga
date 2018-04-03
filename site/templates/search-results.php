@@ -22,7 +22,7 @@
                 $foundPages = $pages->find("item_text|title|training_text~=$searchTerm");
 
                 $content =  '<h2 class="content_name">"' . $searchTerm . '"</h2>';
-                $content .= '<h2 class="content_name">Atrasti ' . count($foundPages) . ' rezultāti(s)</h2>';
+                $content .= '<h2 class="content_name">Найдено -  ' . count($foundPages) . ' результат(а)</h2>';
                 $content .= '<ul id="search-list">';
                 foreach ($foundPages as $page) {
                     $a = '<a href="' . $page->rootParent()->url . '">' . $page->title . '</a>';
@@ -30,7 +30,7 @@
                 }
                 $content .= '</ul>';
             } else {
-                $content .= '<h2 class="content_name">Lūdzu aizpildiet meklēšanas lauku</h2>';
+                $content .= '<h2 class="content_name">Пожалуйста заполните поле поиска</h2>';
             }
             echo $content;
             ?>

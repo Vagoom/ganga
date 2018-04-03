@@ -25,7 +25,7 @@
             }
             $childCounter--;
         }
-            echo $childs->renderPager(['nextItemLabel' => 'Tālāk', 'previousItemLabel' => 'Atpakaļ']);
+            echo $childs->renderPager(['nextItemLabel' => 'дальше', 'previousItemLabel' => 'назад']);
         ?>
 
         <?php include('./inc/footer.php');?>

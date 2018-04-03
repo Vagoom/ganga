@@ -5,11 +5,7 @@
     </div>
     <input class="button training_button" type="button" value="КУПИТЬ">
     <div class="lesson-block">
-        <?php
-            if (!empty($page->training_lessons)) {
-                echo $page->training_lessons;
-            }
-        ?>
+        <?=$page->training_lessons; ?>
     </div>
 </div>
 
