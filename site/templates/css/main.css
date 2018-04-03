@@ -18,6 +18,7 @@ body {
 p {
     font-size: 14px;
     color: #808285;
+    margin: 0;
 }
 
 .container {
@@ -324,7 +325,7 @@ footer ul li a img {
     margin-bottom:25px;
 }
 .about_img {
-    width: 200px;
+    width: 45%;
     float:left;
     margin-right:25px;
     margin-bottom:25px;

@@ -12,8 +12,10 @@
     <div class="container">
         <?php include('./inc/header.php'); ?>
             <h2 class="content_name"><?=$page->title; ?></h2>
-            <div><img class="content_img about_img" src="<?=$page->item_img->url; ?>"></div>
-            <p style="text-align: justify"><?=$page->item_text; ?></p>
+            <div style="display: inline-block">
+                <div><img class="content_img about_img" src="<?=$page->item_img->url; ?>"></div>
+                <p style="text-align: justify"><?=$page->item_text; ?></p>
+            </div>
         <?php include('./inc/footer.php');?>
     </div>
 
