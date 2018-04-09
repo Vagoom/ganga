@@ -7,9 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates?>css/main.css" />
 		<link rel="stylesheet" href="<?=$config->urls->templates?>css/responsive.css">
-	</head>
+        <!-- Specific home page styles, overrides main.css-->
+        <link rel="stylesheet" href="<?=$config->urls->templates?>css/home.css">
+    </head>
 
-	<body>
+	<body id="body_with_background">
 		<div class="container">
             <?php include('./inc/header.php'); ?>
 		    <img id="center-logo" src="<?=$page->centerlogo->url?>">

@@ -13,21 +13,9 @@ const MESSAGE_REQUIRED = 'Пожалуйста введите сообщение
 const NOT_VALID_MESSAGE_LENGTH = 'Сообщение должно содержать от 5 до 255 символов';
 
 
-//Set background image to body
-function indexBackground() {
-    if (location.pathname === HOME_PAGE_URL) {
-        $('body').attr('id', 'body_with_background');
-    }
-    else {
-        //Change color of nav toggler if not on home page
-        $('#nav_toggler .line').removeClass('line').addClass('line_grey');
-    }
-}
+
 
 $(document).ready(function() {
-    //Change background depending on current page
-    indexBackground();
-
     /**
      * Hack for IE height: auto fix
      */
@@ -140,6 +128,7 @@ $(document).ready(function() {
                 form.find('textarea').css('border-color', '#808285');
 
                 response = JSON.parse(response);
+                /** Response status is defined in form-handler.php */
                 if (response.status === 2) {
 
                     form.find('input:not(#send-form-btn)').each(function(key, value) {
@@ -164,6 +153,13 @@ $(document).ready(function() {
 
                     });
                 }
+                if (form.prev().is('.contact-heading')) {
+                    console.log('here');
+                    $('.contact-heading').html('СПАСИБО, ДАННЫЕ ОТПРАВЛЕНЫ');
+                } else {
+                    form.before('<h3 class="contact-heading">' + 'СПАСИБО, ДАННЫЕ ОТПРАВЛЕНЫ' + '</h3>');
+                }
+                form.trigger('reset');
                 //Enable submit button after get response
                 $('#contact_form > #send-form-btn').removeAttr('disabled').val('SŪTĪT');
             });
