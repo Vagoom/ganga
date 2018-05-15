@@ -64,6 +64,16 @@ p {
     font-size: 24px;
     text-shadow: 1px 1px 2px whitesmoke, 0 0 1em white, 0 0 0.2em white;
 }
+#front-page-title .star {
+    width: 5%;
+    height: auto;
+}
+#front-page-title .star:first-of-type {
+    float: left;
+}
+#front-page-title .star:last-of-type {
+    float: right;
+}
 header {
     position: relative;
 }

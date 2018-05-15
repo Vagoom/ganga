@@ -16,6 +16,8 @@
             <?php include('./inc/header.php'); ?>
 		    <img id="center-logo" src="<?=$page->centerlogo->url?>">
             <div id="front-page-title">
+                <img class="star" src="<?=$config->urls->templates . 'img/star.png';?>">
+                <img class="star" src="<?=$config->urls->templates . 'img/star.png';?>">
                 <p>
                     Сайт посвящен Джьотиш, ведической астрологии,
                     которая делает нашу жизнь счастливой и осознанной.
