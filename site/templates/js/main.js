@@ -2,6 +2,7 @@
 const CONTACT_PAGE_URL = '/gangesvara/contact/';
 const HOME_PAGE_URL = '/gangesvara/';
 const FORM_HEADING = 'ПОЖАЛУЙСТА ЗАПОЛНИТЕ';
+const FORM_SUCCESS = 'СПАСИБО, ДАННЫЕ ОТПРАВЛЕНЫ';
 
 const FIRSTNAME_REQUIRED_ERROR_MSG = 'Пожалуйста введите имя';
 const FIRSTNAME_LENGTH_ERROR_MSG = 'Имя должно содержать от 1 до 255 символов';
@@ -155,13 +156,13 @@ $(document).ready(function() {
                 }
                 if (form.prev().is('.contact-heading')) {
                     console.log('here');
-                    $('.contact-heading').html('СПАСИБО, ДАННЫЕ ОТПРАВЛЕНЫ');
+                    $('.contact-heading').html(FORM_SUCCESS);
                 } else {
                     form.before('<h3 class="contact-heading">' + 'СПАСИБО, ДАННЫЕ ОТПРАВЛЕНЫ' + '</h3>');
                 }
                 form.trigger('reset');
                 //Enable submit button after get response
-                $('#contact_form > #send-form-btn').removeAttr('disabled').val('SŪTĪT');
+                $('#contact_form > #send-form-btn').removeAttr('disabled').val('ОТПРАВИТЬ');
             });
         }
     });

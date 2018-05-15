@@ -4,7 +4,15 @@
     </div>
     <div class="item_div">
         <h4 class="item_name"><?=$page->title; ?></h4>
-        <p><?=$page->item_text; ?></p>
+        <?php 
+
+            $publicationContent = $page->item_text;
+
+            if (strlen($publicationContent) > 1000) {
+                echo substr($publicationContent, 0, 1000) . '...';
+            }
+        
+        ?>
         <div>
             <form method="get" action="<?=$page->url?>">
                 <input class="button publication_button" type="submit" value="ЧИТАТЬ">

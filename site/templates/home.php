@@ -15,6 +15,12 @@
 		<div class="container">
             <?php include('./inc/header.php'); ?>
 		    <img id="center-logo" src="<?=$page->centerlogo->url?>">
+            <div id="front-page-title">
+                <p>
+                    Сайт посвящен Джьотиш, ведической астрологии,
+                    которая делает нашу жизнь счастливой и осознанной.
+                </p>
+            </div>
     	</div>
 	<script src="<?=$config->urls->templates?>js/libs/jquery-3.3.1.min.js"></script>
 	<script src="<?=$config->urls->templates?>js/main.js"></script>

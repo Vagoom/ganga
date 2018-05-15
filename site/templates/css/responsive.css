@@ -20,6 +20,9 @@
     #search_container {
         display: none;
     }
+    #front-page-title p {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -72,6 +75,9 @@
     .lesson-block {
         margin-bottom: 8%;
     }
+    #front-page-title p {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 576px) {
     #contact-block {
@@ -90,6 +96,12 @@
     #subscribe_bar > li > a > img {
         width: 30px;
         height: 30px;
+    }
+    #front-page-title {
+        width: 100%;
+    }
+    #front-page-title p {
+        font-size: 19px;
     }
 }
 @media screen and (max-width: 425px) {
@@ -116,5 +128,8 @@
     .about_img {
         float: none;
         width: 100%;
+    }
+    #front-page-title p {
+        font-size: initial;
     }
 }

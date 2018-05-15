@@ -49,6 +49,21 @@ p {
     height: auto;
     border-style: none;
 }
+#front-page-title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 9%;
+    right: 0;
+    left: 0;
+}
+#front-page-title p {
+    color: #4C4B4B;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px whitesmoke, 0 0 1em white, 0 0 0.2em white;
+}
 header {
     position: relative;
 }
